@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Typography } from '../atoms';
 
-// Import hero background image
-import heroImg from '../../assets/images/06.jpg';
+// Reference public image directly
+const heroImg = '/descanso-de-garay/images/06.jpg';
 
 export const HeroSection: React.FC = () => {
   return (

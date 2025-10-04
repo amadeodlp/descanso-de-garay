@@ -1,8 +1,7 @@
-import React from 'react';
-import { LandingPageTemplate } from './components';
+import { LandingPageTemplate } from "./components"
 
 function App() {
-  return <LandingPageTemplate />;
+  return <LandingPageTemplate />
 }
 
-export default App;
+export default App

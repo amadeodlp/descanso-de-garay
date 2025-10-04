@@ -2,9 +2,9 @@ import React from 'react';
 import { Typography, Button } from '../atoms';
 import { CabinCard } from '../molecules';
 
-// Import actual images
-import img01 from '../../assets/images/01.jpg';
-import img03 from '../../assets/images/03.jpg';
+// Reference public images directly
+const img01 = '/descanso-de-garay/images/01.jpg';
+const img03 = '/descanso-de-garay/images/03.jpg';
 
 export const CabinsSection: React.FC = () => {
   const cabins = [

@@ -3,16 +3,16 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Typography, OptimizedImage } from '../atoms';
 
 // Import all available images
-import img01 from '../../assets/images/01.jpg';
-import img03 from '../../assets/images/03.jpg';
-import img05 from '../../assets/images/05.jpg';
-import img06 from '../../assets/images/06.jpg';
-import img08 from '../../assets/images/08.jpg';
-import img09 from '../../assets/images/09.jpg';
-import img13 from '../../assets/images/13.jpg';
-import img14 from '../../assets/images/14.jpg';
-import img15 from '../../assets/images/15.jpg';
-import img17 from '../../assets/images/17.jpg';
+const img01 = "/descanso-de-garay/images/01.jpg"
+const img03 = "/descanso-de-garay/images/03.jpg"
+const img05 = "/descanso-de-garay/images/05.jpg"
+const img06 = "/descanso-de-garay/images/06.jpg"
+const img08 = "/descanso-de-garay/images/08.jpg"
+const img09 = "/descanso-de-garay/images/09.jpg"
+const img13 = "/descanso-de-garay/images/13.jpg"
+const img14 = "/descanso-de-garay/images/14.jpg"
+const img15 = "/descanso-de-garay/images/15.jpg"
+const img17 = "/descanso-de-garay/images/17.jpg"
 
 export const ImageGallerySection: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);

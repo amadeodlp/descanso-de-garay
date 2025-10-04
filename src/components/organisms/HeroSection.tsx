@@ -6,10 +6,13 @@ const heroImg = '/descanso-de-garay/images/06.jpg';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section id="inicio" className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="inicio"
+      className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Real Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <img
           src={heroImg}
           alt="Vista del Complejo Costa Garay"
           className="w-full h-full object-cover"
@@ -22,26 +25,29 @@ export const HeroSection: React.FC = () => {
       {/* Content */}
       <div className="hero-section__content relative z-20 container text-center">
         <div className="animate-fade-in">
-          <Typography 
-          variant="h1" 
-          color="white" 
-          weight="bold" 
-          className="mb-6 text-shadow-lg animate-slide-up"
+          <Typography
+            variant="h1"
+            color="white"
+            weight="bold"
+            className="mb-6 text-shadow-lg animate-slide-up"
           >
-          Complejo Costa Garay
+            Complejo Costa Garay
           </Typography>
-          
-          <Typography 
-          variant="subtitle" 
-          color="white" 
-          className="mb-8 max-w-2xl mx-auto text-shadow animate-slide-up opacity-90"
-          style={{animationDelay: '0.2s'}}
+
+          <Typography
+            variant="subtitle"
+            color="white"
+            className="mb-8 max-w-2xl mx-auto text-shadow animate-slide-up opacity-90"
           >
-          Experiencia única a metros del Lago Los Molinos, Córdoba. Cabañas de lujo con extenso parque, 
-          pileta y actividades para toda la familia, donde cada amanecer es una invitación a conectar con la naturaleza.
+            Experiencia única a metros del Lago Los Molinos, Córdoba. Cabañas de
+            lujo con extenso parque, pileta y actividades para toda la familia,
+            donde cada amanecer es una invitación a conectar con la naturaleza.
           </Typography>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{animationDelay: '0.4s'}}>
+
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up"
+            style={{ animationDelay: "0.4s" }}
+          >
             <Button variant="primary" size="lg" className="shadow-lg">
               Explorar Cabañas
             </Button>
@@ -59,5 +65,5 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
     </section>
-  );
+  )
 };

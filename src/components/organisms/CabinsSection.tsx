@@ -31,19 +31,23 @@ export const CabinsSection: React.FC = () => {
           <Typography variant="h2" className="mb-6 text-gradient">
             Nuestras Cabañas
           </Typography>
-          <Typography variant="subtitle" color="secondary" className="max-w-3xl mx-auto">
-            Cada cabaña ha sido diseñada para ofrecer una experiencia única a metros del Lago Los Molinos, 
-            con nuestro extenso parque que cuenta con pileta, área de juegos y espacios de relajación.
+          <Typography
+            variant="subtitle"
+            color="secondary"
+            className="max-w-3xl mx-auto"
+          >
+            Cada cabaña ha sido diseñada para ofrecer una experiencia única a
+            metros del Lago Los Molinos, con nuestro extenso parque que cuenta
+            con pileta, área de juegos y espacios de relajación.
           </Typography>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {cabins.map((cabin, index) => (
+          {cabins.map(cabin => (
             <CabinCard
               key={cabin.title}
               {...cabin}
               className="animate-slide-up"
-              style={{animationDelay: `${index * 0.2}s`}}
             />
           ))}
         </div>
@@ -58,5 +62,5 @@ export const CabinsSection: React.FC = () => {
         </div>
       </div>
     </section>
-  );
+  )
 };

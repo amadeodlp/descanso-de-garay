@@ -38,11 +38,26 @@ export const ExperiencesSection: React.FC = () => {
   ];
 
   return (
-    <section id="experiencias" className="experiences-section section relative overflow-hidden">
+    <section
+      id="experiencias"
+      className="experiences-section section relative overflow-hidden"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <svg width="60" height="60" viewBox="0 0 60 60" className="absolute inset-0 w-full h-full">
-          <pattern id="pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          className="absolute inset-0 w-full h-full"
+        >
+          <pattern
+            id="pattern"
+            x="0"
+            y="0"
+            width="60"
+            height="60"
+            patternUnits="userSpaceOnUse"
+          >
             <circle cx="30" cy="30" r="1.5" fill="currentColor" />
           </pattern>
           <rect width="100%" height="100%" fill="url(#pattern)" />
@@ -54,19 +69,23 @@ export const ExperiencesSection: React.FC = () => {
           <Typography variant="h2" className="mb-6">
             Experiencias Únicas
           </Typography>
-          <Typography variant="subtitle" color="secondary" className="max-w-3xl mx-auto">
-            Más que un lugar para descansar, Complejo Costa Garay es una puerta de entrada 
-            a experiencias únicas a metros del Lago Los Molinos, con nuestro extenso parque y actividades para toda la familia.
+          <Typography
+            variant="subtitle"
+            color="secondary"
+            className="max-w-3xl mx-auto"
+          >
+            Más que un lugar para descansar, Complejo Costa Garay es una puerta
+            de entrada a experiencias únicas a metros del Lago Los Molinos, con
+            nuestro extenso parque y actividades para toda la familia.
           </Typography>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {experiences.map((experience, index) => (
+          {experiences.map(experience => (
             <FeatureCard
               key={experience.title}
               {...experience}
               className="animate-slide-up"
-              style={{animationDelay: `${index * 0.1}s`}}
             />
           ))}
         </div>
@@ -75,9 +94,14 @@ export const ExperiencesSection: React.FC = () => {
           <Typography variant="h3" className="mb-4 text-gradient">
             Experiencia Todo Incluido
           </Typography>
-          <Typography variant="body" color="secondary" className="mb-6 max-w-2xl mx-auto">
-            Creamos paquetes personalizados que combinan alojamiento, actividades y gastronomía 
-            para que solo te preocupes por disfrutar cada momento.
+          <Typography
+            variant="body"
+            color="secondary"
+            className="mb-6 max-w-2xl mx-auto"
+          >
+            Creamos paquetes personalizados que combinan alojamiento,
+            actividades y gastronomía para que solo te preocupes por disfrutar
+            cada momento.
           </Typography>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="primary" size="lg">
@@ -90,5 +114,5 @@ export const ExperiencesSection: React.FC = () => {
         </div>
       </div>
     </section>
-  );
+  )
 };
